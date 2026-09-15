@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>LifeHub</title>
+</head>
+<body>
+    <div class="app-shell">
+        <!-- SIDEBAR -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-logo">
+                <span class="icon"></span>
+                <h2><img class="title-icon" src="assets/icons/sprout.svg">LifeHub</h2>
+            </div>
+
+            <ul class="nav-group">
+                <button class="sidebar-btn" id="dashboard-btn"><li class="nav-item active"><span class="icon"></span><span class="nav-label"><img class="title-icon" src="assets/icons/house.svg"> Dashboard</span></li></button>
+                <button class="sidebar-btn" id="health-btn"><li class="nav-item"><span class="icon"></span><span class="nav-label"><img class="title-icon" src="assets/icons/heart.svg"> Health</span></li></button>
+                <button class="sidebar-btn" id="fitness-btn"><li class="nav-item"><span class="icon"></span><span class="nav-label"><img class="title-icon" src="assets/icons/sport-shoe.svg"> Fitness</span></li></button>
+                <button class="sidebar-btn" id="nutrition-btn"><li class="nav-item"><span class="icon"></span><span class="nav-label"><img class="title-icon" src="assets/icons/utensils (1).svg"> Nutrition</span></li></button>
+                <button class="sidebar-btn" id="sleep-btn"><li class="nav-item"><span class="icon"></span><span class="nav-label"><img class="title-icon" src="assets/icons/moon.svg"> Sleep</span></li></button>
+            </ul>
+            
+            <div class="separator"></div>
+
+            <ul class="nav-group">
+                <button class="sidebar-btn" id="goals-btn"><li class="nav-item"><span class="icon"></span><span class="nav-label"><img class="title-icon" src="assets/icons/goal.svg"> Goals</span></li></button>
+                <button class="sidebar-btn" id="habits-btn"><li class="nav-item"><span class="icon"></span><span class="nav-label"><img class="title-icon" src="assets/icons/circle-check-big.svg"> Habits</span></li></button>
+                <button class="sidebar-btn" id="tasks-btn"><li class="nav-item"><span class="icon"></span><span class="nav-label"><img class="title-icon" src="assets/icons/clipboard-list.svg"> Tasks</span></li></button>
+            </ul>
+
+            <div class="separator"></div>
+
+            <ul class="nav-group">
+                <button class="sidebar-btn" id="mind-btn"><li class="nav-item"><span class="icon"></span><span class="nav-label"><img class="title-icon" src="assets/icons/brain (1).svg"> Mind</span></li></button>
+                <button class="sidebar-btn" id="journal-btn"><li class="nav-item"><span class="icon"></span><span class="nav-label"><img class="title-icon" src="assets/icons/notebook-pen.svg"> Journal</span></li></button>
+                <!-- <li class="nav-item"><span class="icon"></span><span class="nav-label"><img class="title-icon" src="assets/icons/leaf.svg"> Meditation</span></li> -->
+            </ul>
+
+            <div class="separator"></div>
+
+            <ul class="nav-group">
+                <button class="sidebar-btn" id="finance-btn"><li class="nav-item"><span class="icon"></span><span class="nav-label"><img class="title-icon" src="assets/icons/banknote.svg"> Finance</span></li></button>
+                <button class="sidebar-btn" id="learning-btn"><li class="nav-item"><span class="icon"></span><span class="nav-label"><img class="title-icon" src="assets/icons/graduation-cap.svg"> Learning</span></li></button>
+            </ul>
+
+            <div class="separator"></div>
+
+            <ul class="nav-group">
+                <button class="sidebar-btn" id="ai-btn"><li class="nav-item"><span class="icon"></span><span class="nav-label"><img class="title-icon" src="assets/icons/sparkles.svg"> AI Coach</span></li></button>
+                <button class="sidebar-btn" id="reports-btn"><li class="nav-item"><span class="icon"></span><span class="nav-label"><img class="title-icon" src="assets/icons/chart-column (1).svg"> Reports</span></li></button>
+            </ul>
+
+            <div class="separator"></div>
+
+            <ul class="nav-group nav-group-bottom">
+                <button class="sidebar-btn" id="settings-btn"><li class="nav-item"><span class="icon"></span><span class="nav-label"><img class="title-icon" src="assets/icons/settings (1).svg"> Settings</span></li></button>
+                <button class="sidebar-btn" id="profile-btn"><li class="nav-item"><span class="icon"></span><span class="nav-label"><img class="title-icon" src="assets/icons/circle-user-round (1).svg"> Profile</span></li></button>
+            </ul>
+
+            <button class="sidebar-collapse-btn" id="collapseBtn">
+                <span class="icon"></span><span class="nav-label">Collapse</span>
+            
+        </nav>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <section class="page dashboard page" id="dashboard-page">
+                <header class="topbar">
+                    <div class="search-bar">
+                        <img class="search-icon" src="assets/icons/search.svg">
+                        <input class="search-input" type="text" placeholder="Search anything...">
+                    </div>
+                    <div class="topbar-actions">
+                        <img class="title-icon" src="assets/icons/bell.svg">
+                        <img class="title-icon" src="assets/icons/moon.svg">                    
+                        <div class="user-chip">
+                            <img class="title-icon" src="assets/icons/circle-user-round (1).svg">
+                            <span>Pam <img class="title-icon" src="assets/icons/chevron-down.svg"></span>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="dashboard-greeting">
+                    <div>
+                        <h1>Good evening, George.</h1>
+                        <p style="font-family: Myriad-reg; color: rgb(167, 166, 166);">Let's build a better george, every day.</p>
+                    </div>
+                    <div class="date-display">
+                        <div class="dashboard-date">Wednesday, 22 May 2024</div>
+                        <img class="date-icon" src="assets/icons/calendar.svg">
+                    </div>  
+                </section>
+
+                <!-- Top bento grid: 3 columns, Life Score spans both rows -->
+                <div class="dashboard-grid">
+                    <div class="card card-health-overview">
+                            <div class="card-header">
+                            <img class="title-icon" src="assets/icons/heart-pulse.svg">
+                            Health Overview
+                        </div>
+                        <div class="card-body">
+                            <div class="stat">
+                                <div class="stat-value">
+                                    <span>72</span>
+                                    <span class="unit">bpm</span>
+                                </div>
+                                <div class="stat-label" id="bpm-stat-label">
+                                    Resting Heart Rate
+                                </div>
+                                <div class="stat-change positive">
+                                    <img id="sleep-change-icon" src="assets/icons/arrow-up.svg">
+                                    <span class="stat-change-value">5%</span>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">
+                                    <span>8<span class="unit sleep-unit">h</span> 24<span class="unit sleep-unit" >m</span></span>
+                                </div>
+                                <div class="stat-label" id="sleep-stat-label">
+                                    Sleep
+                                </div>
+                                <div class="stat-change positive">
+                                    <img id="sleep-change-icon" src="assets/icons/arrow-up.svg">
+                                    <span class="stat-change-value">12%</span>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">
+                                    <span>2.4</span>
+                                    <span class="unit">L</span>
+                                </div>
+                                <div class="stat-label"id="water-stat-label">
+                                    Water
+                                </div>
+                                <div class="stat-change positive">
+                                    <img id="sleep-change-icon" src="assets/icons/arrow-up.svg">
+                                    <span class="stat-change-value">8%</span>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="separator" id="health-overview-separator"></div>
+                        <div class="card-footer">
+                            View full health
+                            <img class="view-icon" src="assets/icons/chevron-right.svg">
+                            
+                        </div>
+                    </div>
+                    <div class="card card-life-score">Life Score
+
+                        <div class="life-score-progress">
+                        <div class="life-score-ring">
+
+                            <svg width="220"
+                                height="220">
+                                <defs>
+                                <linearGradient
+                                    id="lifeGradient"
+                                    x1="0%"
+                                    y1="0%"
+                                    x2="100%"
+                                    y2="100%">
+                                    <stop
+                                        offset="0%"
+                                        stop-color="#9d6bff"/>
+                                    <stop
+                                        offset="100%"
+                                        stop-color="#4b8dff"/>
+                                </linearGradient>
+
+                                </defs>
+                                <circle
+                                    class="ring-background"
+                                    cx="110"
+                                    cy="110"
+                                    r="90"
+                                    />
+                                <circle
+                            class="ring-progress"
+                            cx="110"
+                            cy="110"
+                            r="90"
+                            />
+                            </svg>
+                            <div class="score-text">
+                                <h1>82</h1>
+                                <p>Great progress!</p>
+                            </div>
+                            <img class="increase-icon" src="assets/icons/increase.svg">
+                            </div>
+                        </div>
+                        <div class="progress-metrics">
+                            <div class="metric health-metric">
+                                <div class="icon-background health">
+                                        <img class="metric-icon" src="assets/icons/heart-pulse (2).svg">
+                                    </div>
+                                <div class="metric-info">
+                                    <div class="metric-label">Health</div>
+                                    <div class="progress-track life-scores">
+                                        <div class="progress-fill health"></div>
+                                    </div>
+                                    <div class="metric-values"><span class="metric-value">85 </span><span class="metric-goal">/ 100</span></div> 
+                                </div>
+                            </div>
+                            <div class="metric fitness-metric">
+                                <div class="icon-background fitness">
+                                    <img class="metric-icon" src="assets/icons/sport-shoe (1).svg">
+                                </div>
+                                <div class="metric-info">
+                                    <div class="metric-label">Fitness</div>
+                                    <div class="progress-track life-scores">
+                                        <div class="progress-fill fitness"></div>
+                                    </div>
+                                    <div class="metric-values"><span class="metric-value">80 </span><span class="metric-goal">/ 100</span></div>
+                                </div> 
+                            </div>
+                            <div class="metric mind-metric">
+                                <div class="icon-background mind">
+                                    <img class="metric-icon" src="assets/icons/brain (2).svg">
+                                </div>
+                                <div class="metric-info">
+                                    <div class="metric-label">Mind</div>
+                                    <div class="progress-track life-scores">
+                                        <div class="progress-fill mind"></div>
+                                    </div>
+                                    <div class="metric-values"><span class="metric-value">78 </span><span class="metric-goal">/ 100</span></div>
+                                </div> 
+                            </div>
+                            <div class="metric productivity-metric">
+                                <div class="icon-background productivity">
+                                    <img class="metric-icon" src="assets/icons/rocket (1).svg">
+                                </div>
+                                <div class="metric-info">
+                                    <div class="metric-label">Productivity</div>
+                                    <div class="progress-track life-scores">
+                                        <div class="progress-fill productivity"></div>
+                                    </div>
+                                    <div class="metric-values"><span class="metric-value">85 </span><span class="metric-goal">/ 100</span></div> 
+                                </div>
+                            </div>
+                            <div class="metric finance-metric">
+                                <div class="icon-background finance">
+                                    <img class="metric-icon" src="assets/icons/dollar-sign (1).svg">
+                                </div>
+                                <div class="metric-info">
+                                    <div class="metric-label finance">Finance</div>
+                                    <div class="progress-track life-scores" id="progress-track-finance">
+                                        <div class="progress-fill finance"></div>
+                                    </div>
+                                    <div class="metric-values"><span class="metric-value">75 </span><span class="metric-goal">/ 100</span></div>
+                                    </div> 
+                            </div>
+                            <div class="metric learning-metric">
+                                <div class="icon-background learning">
+                                    <img class="metric-icon" src="assets/icons/book-open-text.svg">
+                                </div>
+                                <div class="metric-info">
+                                    <div class="metric-label learning">Learning</div>
+                                    <div class="progress-track life-scores" id="progress-track-learning">
+                                        <div class="progress-fill learning"></div>
+                                    </div>
+                                    <div class="metric-values"><span class="metric-value">82 </span><span class="metric-goal">/ 100</span></div>
+                                </div> 
+                            </div>
+                        </div>
+                    
+                        <div class="separator" id="life-score-separator"></div>
+                        
+                        <div class="card-footer life-score">
+                            View detailed report
+                            <img class="view-icon life-score" src="assets/icons/chevron-right.svg">
+                        </div>
+                       
+                    </div>
+                    <div class="card card-daily-goals"><img class="title-icon" src="assets/icons/target.svg"> Daily Goals
+                        <div class="progress-container">
+                            <svg class="progress-circle" width="30" height="30" viewBox="0 0 180 180">
+                                <!-- Background circle -->
+                                <circle 
+                                    class="progress-background" 
+                                    cx="90" 
+                                    cy="90" 
+                                    r="78"/>
+                                
+                                <!-- Progress circle -->
+                                <circle 
+                                    id="progressBar"
+                                    class="progress-bar" 
+                                    cx="90" 
+                                    cy="90" 
+                                    r="78"
+                                    stroke-dasharray="490"
+                                    stroke-dashoffset="490"/>
+                            </svg>
+                            
+                            <!-- Center text -->
+                            <div class="progress-text" id="progressText">
+                                0/0
+                            </div>
+                        </div>
+                        <div class="card-body daily-goals">
+                            <div class="goal-line">
+                                <img class="goal-icon" src="assets/icons/square-check.svg">
+                                <span class="goal">10,000 Steps</span>
+                            </div>
+                            <div class="goal-line" style="margin-left: 12px;">
+                                <img class="goal-icon" src="assets/icons/square (1).svg">
+                                <span class="goal">Drink 2.5L Water</span>
+                            </div>
+                            <div class="goal-line">
+                                <img class="goal-icon" src="assets/icons/square-check.svg">
+                                <span class="goal">Read 20 Pages</span>
+                            </div>
+                            <div class="goal-line">
+                                <img class="goal-icon" src="assets/icons/square (1).svg">
+                                <span class="goal">Meditate 10 mins</span>
+                            </div>
+                            <div class="goal-line">
+                                <img class="goal-icon" src="assets/icons/square (1).svg">
+                                <span class="goal">Workout</span>
+                            </div>
+                            <div class="separator" id="daily-goals-separator"></div>
+                        
+                        </div>
+                        <div class="card-footer goals">
+                            View all goals
+                            <img class="view-icon goals" src="assets/icons/chevron-right.svg">
+                        </div>
+                    </div>
+                    <div class="card card-workout-summary"><img class="title-icon" src="assets/icons/dumbbell.svg"> Workout Summary
+
+                        <div class="card-body">
+
+                            <div class="stat-value">
+                                <span class="workouts-value">3 </span>
+                                <span style="font-size: 25px; color: rgb(167, 166, 166);">/</span>
+                                <span class="workouts-goal"> 5</span>
+                            </div>  
+                            <h5>Workouts this week</h5>
+                        </div>
+                        <div class="progress-track workout">
+                            <div class="progress-fill workout"></div>
+                        </div>
+                        <div class="separator" id="workouts-separator"></div>
+                        <div class="card-footer">
+                            View workouts
+                            <img class="view-icon" src="assets/icons/chevron-right.svg">
+                        </div>
+            
+
+                    </div>
+                    <div class="card card-quick-actions"><img class="title-icon" src="assets/icons/zap.svg"> Quick Actions
+                        <div class="card-body quick-actions">
+                            <div class="action-container">
+                                <img class="action-icon" src="assets/icons/dumbbell.svg">
+                                <span class="action 1">
+                                    Log Workout
+                                </span>
+                            </div>
+                            <div class="action-container">
+                                <img class="action-icon" src="assets/icons/utensils (2).svg">
+                                <span class="action 2">
+                                    Log Workout
+                                </span>
+                            </div>
+                            <div class="action-container">
+                                <img class="action-icon" src="assets/icons/smile-plus.svg">
+                                <span class="action 3">
+                                    Log Workout
+                                </span>
+                            </div>
+                            <div class="action-container">
+                                <img class="action-icon" src="assets/icons/circle-plus.svg">
+                                <span class="action 4">
+                                    Log Workout
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom row: 4 equal columns -->
+                <div class="dashboard-grid-secondary">
+                    <div class="card card-mind-wellbeing"><img class="title-icon" src="assets/icons/brain.svg"> Mind &amp; Wellbeing
+                    
+                    <div class="card-body mood">
+                            <div class="mood">
+                                <h5>Mood</h5>
+                                <div class="mood-info">
+                                    <img class="mood-icon" src="assets/icons/smile.svg">
+                                    <span class="mood-value"> Good</span>
+                                </div>
+                            </div>
+                            <div class="stress">
+                                <h5>Stress Level</h5>
+                                <span class="stress-value"> Low</span>
+                            </div>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill stress"></div>
+                        </div>
+                        <div class="separator" id="mind-wellbeing-separator"></div>
+                        <div class="card-footer">
+                            View journal 
+                            <img class="view-icon" src="assets/icons/chevron-right.svg">
+                        </div>
+                    </div>
+
+                    <div class="card card-todays-focus"><img class="title-icon" src="assets/icons/star.svg"> Today's Focus
+                        <div class="card-body focus">
+                          
+                            <div class="quote">
+                                <div class="quote-image">
+                                    <img class="quote-icon" src="assets/icons/quotemark.svg">
+                                </div>
+                                <div class="quote-and-source">
+                                    <h5 class="quote-text">Discipline is choosing between what you want now and what you want most</h5>
+                                    <h6>- Unkown</h6>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    
+                    </div>
+                    <div class="card card-upcoming">
+                        <div class="card-header">
+                            <img class="title-icon" src="assets/icons/calendar-days.svg"> 
+                            Upcoming
+                        </div>  
+                        <div class="card-body upcoming">
+                            <div class="task-row">
+                                <svg class="upcoming-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="#387adc" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="8"/>
+                                </svg>
+                                <!-- <div class="task-info"> -->
+                                    <span class="task">Project Deadline</span>  
+                                    <div class="task-date"><span>24 May, 10:00</span></div>
+                                <!-- </div>   -->
+                            </div>
+                            <div class="task-row">
+                                <svg class="upcoming-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="#387adc" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="8"/>
+                                </svg>
+                                <span class="task">Gym Session</span>
+                           
+                            <div class="task-date second"><span>25 May, 18:00</span></div>
+                            </div>
+                        </div>
+                        <div class="separator" id="upcoming-separator"></div>
+                        <div class="card-footer">
+                            View calendar 
+                            <img class="view-icon" src="assets/icons/chevron-right.svg">
+                        </div>
+                    </div>
+                    <div class="card card-ai-insight"><img class="title-icon" src="assets/icons/sparkles.svg">AI Insight
+                        <div class="card-body ai-insight">
+                            <div class="ai-insight">
+                                <h5 class="ai-insight-text">You've been most productive on days when you exercise in the morning.<br>Keep it up! 💪</h5>    
+                            </div>
+                            <div class="separator" id="ai-insight-separator"></div>
+                            <div class="card-footer">
+                                View insights 
+                                <img class="view-icon" src="assets/icons/chevron-right.svg">
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </section>
+            <section class="page health-page" id="health-page"></section>
+            <section class="page fitness-page" id="fitness-page"></section>
+        </main>
+    </div>
+</body>
+
+<script src="index.js"></script>
+</html>
