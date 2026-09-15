@@ -1,0 +1,17 @@
+/* ===== PAGE SHELL ===== */
+.app-shell {
+    display: grid;
+    grid-template-columns: var(--sidebar-width) 1fr;
+    min-height: 100vh;
+    transition: grid-template-columns 0.25s ease;
+}
+
+.app-shell.sidebar-collapsed {
+    grid-template-columns: var(--sidebar-width-collapsed) 1fr;
+}
+
+.page{
+    display:flex;
+    flex-direction:column;
+    gap: 15px;
+}

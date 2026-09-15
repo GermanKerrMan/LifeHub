@@ -1,0 +1,50 @@
+.task, .task-date {
+    font-size: 16.5px;
+    font-family: 'Myriad-reg';
+    padding-left: 5px;
+}
+
+.task {
+    color: rgb(210, 210, 210);
+}
+
+
+.upcoming {
+    display: flex;
+    flex-direction: row;
+}
+
+.upcoming-icon {
+    /* margin-top: 10px;
+    margin-left: 4px;
+    margin-right: 10px; */
+}
+
+.upcoming.first {
+    /* margin-bottom: 10px; */
+}
+
+.task-date {    
+    /* transform: translate(31px, -11px); */
+}
+
+.task-date {
+    padding-left: 25px
+}
+.task-date span {
+    font-size: 12px;
+    color: rgb(167, 166, 166);
+}
+
+.task-date.second {
+    /* transform: translate(31px, 0px); */
+}
+
+.card-body.upcoming {
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.card-body.upcoming {
+    gap: 10px;
+}

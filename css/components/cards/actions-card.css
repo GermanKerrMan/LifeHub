@@ -1,0 +1,31 @@
+.card-body.quick-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 23px;
+}
+
+.action-container {
+    border: 2px solid rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    background-color: var(--surface-alt);
+    width: 210px;
+    height: 55px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: rgb(167, 166, 166);
+    font-size: 15px;
+    padding-left: 12px;
+    gap: 9px;
+}
+
+/* .action-icon {
+    margin-left: 10px;
+    margin-right: 8px;
+} */
+
+/* .card-quick-actions {
+    height: 235px;
+} */

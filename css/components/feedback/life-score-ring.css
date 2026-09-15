@@ -1,0 +1,29 @@
+.ring-background{
+    fill:none;
+    stroke:#222b3b;
+    stroke-width:12;
+}
+
+.ring-progress{
+    fill:none;
+    stroke:url(#lifeGradient);
+    stroke-width:12;
+    stroke-linecap:round;
+    transform:rotate(-90deg);
+    transform-origin:center;
+    stroke-dasharray:565;
+    stroke-dashoffset:100;
+}
+
+.ring-progress{
+    animation:fillRing 1.2s ease;
+}
+
+@keyframes fillRing{
+    from {
+        stroke-dashoffset:565;
+    }
+    to{
+        stroke-dashoffset:101;
+    }
+}

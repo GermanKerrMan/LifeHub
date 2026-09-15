@@ -1,0 +1,157 @@
+
+
+.progress-track{
+    width: 100%;
+    height:8px;
+    background:#232b3d;
+    border-radius:20px;
+    overflow:hidden;
+    margin-top:18px;
+}
+
+.progress-track.workout {
+    width: 100%;
+}
+
+.progress-track.life-scores {
+    width: 95px;
+    margin: 0px;
+    /* transform: translate(64px, -36px); */
+    height: 6px;
+}
+
+.progress-fill{
+    height:100%;
+    border-radius:20px;
+}
+
+.progress-fill.workout{
+    width:60%;
+    background:linear-gradient(
+        90deg,
+        #ffa857,
+        #f36b11
+    );
+    
+}
+
+
+.progress-fill.stress{
+    width: 45%;
+    background: linear-gradient(
+        90deg,
+        #8b5cf6,
+        #5b7cff
+    );
+    margin: 0px;
+}
+
+.progress-fill.health {
+    width: 65%;
+    background: linear-gradient(
+        90deg,
+        #45f6b5,
+        #00ae57
+    );
+    margin: 0px;
+    opacity: 0.7;
+}
+
+.progress-fill.fitness {
+    width: 65%;
+    background: linear-gradient(
+        90deg,
+        #f6e745,
+        #ff9102
+    );
+    margin: 0px;
+    opacity: 0.7;
+}
+
+.progress-fill.mind {
+    width: 65%;
+    background: linear-gradient(
+        90deg,
+        #b554ff,
+        #8200be
+    );
+    margin: 0px;
+    opacity: 0.7;
+}
+
+.progress-fill.productivity {
+    width: 65%;
+    background: linear-gradient(
+        90deg,
+        #00a7de,
+        #0059ff
+    );
+    margin: 0px;
+    opacity: 0.7;
+}
+
+.progress-fill.finance {
+    width: 65%;
+    background: linear-gradient(
+        90deg,
+        #00a319,
+        #007139
+    );
+    margin: 0px;
+    opacity: 0.7;
+}
+
+.progress-fill.learning {
+    width: 65%;
+    background: linear-gradient(
+        90deg,
+        #007bff,
+        #0022ff
+    );
+    margin: 0px;
+    opacity: 0.7;
+}
+
+
+.progress-container {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transform: translate(370px, -25px);
+}
+
+.progress-circle {
+    transform: rotate(-90deg);
+}
+
+.progress-background {
+    fill: none;
+    stroke: #2a2a2a;
+    stroke-width: 18;
+}
+
+.progress-bar {
+    fill: none;
+    stroke: #22ff88;
+    stroke-width: 18;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.6s ease;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(100%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.progress-text small {
+    display: block;
+    font-size: 14px;
+    color: #888;
+    margin-top: 4px;
+}

@@ -1,0 +1,61 @@
+.search-bar:hover {
+    background-color: var(--surface-alt);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.search-bar:focus-within {
+    width: 410px;                    /* Expands nicely on focus */
+    border-color: var(--accent-primary);
+    box-shadow: 
+        0 0 0 3px rgba(139, 92, 246, 0.15),  /* Purple glow ring */
+        0 10px 25px rgba(139, 92, 246, 0.25);
+    background-color: var(--surface-alt);
+}
+
+/* Icon animation */
+.search-icon {
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+    filter: brightness(0.9);
+}
+
+.search-bar:focus-within .search-icon {
+    transform: scale(1.15) rotate(90deg);
+    filter: brightness(1.1) drop-shadow(0 0 4px var(--accent-primary));
+}
+
+/* Input styling */
+.search-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: var(--text-primary);
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+    color: var(--text-muted);
+    transition: opacity 0.3s ease;
+}
+
+.search-bar:focus-within .search-input::placeholder {
+    opacity: 0.6;
+}
+
+/* Optional micro-interaction on typing */
+.search-input:focus {
+    caret-color: var(--accent-primary);
+}
+
+@keyframes focusPulse {
+    0% { box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15); }
+    50% { box-shadow: 0 0 0 6px rgba(139, 92, 246, 0.08); }
+    100% { box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15); }
+}
+
+.search-bar:focus-within {
+    animation: focusPulse 2s infinite ease-in-out;
+}

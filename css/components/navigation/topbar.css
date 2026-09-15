@@ -1,0 +1,56 @@
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--surface);
+    border: 1px solid var(--surface-border);
+    border-radius: 50px;
+    padding: 10px 16px;
+    width: 300px;
+    height: 50px;
+    
+    /* Animation foundation */
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.topbar-actions {
+    display: flex;
+    align-items: center;
+    transform: translateX(693px);
+    position: absolute;
+    gap: 16px;
+}
+
+.dashboard-greeting {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.dashboard-date {
+    margin-right: 5px;
+    color: rgb(167, 166, 166);
+}
+
+.date-display {
+    display: flex;
+    margin-top: 30px;
+}
+
+.user-chip {
+    border: 1px solid white;
+    border-radius: 25px;
+    padding-top: 6px;
+    padding-left: 10px;
+    width: 125px;
+    height: 50px;
+    margin-top: 8px;
+}
+

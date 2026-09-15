@@ -1,0 +1,39 @@
+.separator {
+    background-color: whitesmoke;
+    height: 0.1px;
+    opacity: 0.1;
+    padding: 0px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+
+#mind-wellbeing-separator {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    width: 330px;
+}
+
+#workouts-separator {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 348px;
+}
+
+#daily-goals-separator {
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+}
+
+#ai-insight-separator {
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+#upcoming-separator {
+    margin-top: 25px;
+    margin-bottom: 0px;
+}

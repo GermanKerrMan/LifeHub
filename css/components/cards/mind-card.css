@@ -1,0 +1,36 @@
+.mood-value, .stress-value {
+    font-size: 15px;
+  
+}
+
+.mood-value {
+    color: #8b5cf6;
+}
+
+.stress-value {
+    color: #148ab8
+}
+
+.mood, .stress {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mood-info {
+    display: flex;
+    gap: 5px;
+}
+
+.mood-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.card-body.mood {
+    gap: 10px
+}
+
+/* .mood-icon {
+    transform: translateX(110px);
+} */
+
