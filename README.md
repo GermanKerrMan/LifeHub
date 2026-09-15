@@ -9,15 +9,18 @@ A "life improvement hub" / personal operating system designed to bring productiv
 
 <img width="1906" height="937" alt="image" src="https://github.com/user-attachments/assets/462c9fc0-3d75-48c5-948c-a1897f88719e" />
 
-Technologies
 
-HTMLCSSJavaScript
+## Technologies
 
-What I learned
+- HTML
+- CSS
+- JavaScript
+
+## What I learned
 
 Designing a larger application as a coherent system, building reusable UI components and thinking carefully about how different areas of a product work together.
 
-About the project
+## About the project
 
 LifeHub is an ongoing personal project designed to bring different areas of everyday life into one connected platform. The idea is to create a personal operating system where users can manage areas such as productivity, health, fitness, nutrition, sleep, goals, habits, tasks, finance and learning from a single interface. I am developing the project iteratively, expanding both its functionality and visual design over time.
 
